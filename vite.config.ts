@@ -9,6 +9,14 @@ export default defineConfig({
   plugins: [...mochaPlugins(process.env as any), react(), cloudflare()],
   server: {
     allowedHosts: true,
+    port: 5173,
+    strictPort: false,
+    open: true,
+    headers: {
+      'Cache-Control': 'no-store, no-cache, must-revalidate, proxy-revalidate',
+      'Pragma': 'no-cache',
+      'Expires': '0',
+    },
   },
   build: {
     chunkSizeWarningLimit: 5000,
@@ -18,4 +26,5 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  clearScreen: false,
 });
