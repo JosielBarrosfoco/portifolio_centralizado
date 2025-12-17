@@ -9,9 +9,8 @@ export default function HeroSection() {
   // Tenta carregar a imagem em diferentes formatos
   useEffect(() => {
     const formats = [
-      '/imagem/foto01.webp', '/imagem/foto01.jpg', '/imagem/foto01.jpeg', '/imagem/foto01.png',
-      '/foto01.jpg', '/foto01.jpeg', '/foto01.png', '/foto01.webp',
-      '/profile.jpg', '/profile.jpeg', '/profile.png', '/profile.webp'
+      '/foto01.webp', '/foto01.jpg', '/foto01.jpeg', '/foto01.png',
+      '/profile.webp', '/profile.jpg', '/profile.jpeg', '/profile.png'
     ];
     let currentIndex = 0;
     
