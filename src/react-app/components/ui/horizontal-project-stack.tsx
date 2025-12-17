@@ -90,8 +90,6 @@ export function HorizontalProjectStack({ projects }: HorizontalProjectStackProps
     return Math.abs(diff) <= 2
   }
 
-  const currentProject = projects[currentIndex]
-
   return (
     <div className="relative flex h-[600px] w-full items-center justify-center overflow-hidden bg-white dark:bg-slate-900 py-12">
       {/* Subtle ambient glow */}
