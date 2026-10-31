@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { AreasSection, TechSection } from '@/react-app/components/PortfolioExtras';
 import {
   ArrowDown, ArrowRight, ArrowUpRight, BriefcaseBusiness,
   Code2, Database, ExternalLink, Github, Globe2, Instagram, Layers3,
@@ -182,8 +183,9 @@ export default function Home() {
           </a>
           <nav className={menuOpen ? 'nav-links nav-open' : 'nav-links'} aria-label="Navegação principal">
             <a href="#sobre" onClick={() => setMenuOpen(false)}>Sobre</a>
+            <a href="#areas" onClick={() => setMenuOpen(false)}>Áreas</a>
+            <a href="#stack" onClick={() => setMenuOpen(false)}>Stack</a>
             <a href="#projetos" onClick={() => setMenuOpen(false)}>Projetos</a>
-            <a href="#trajetoria" onClick={() => setMenuOpen(false)}>Trajetória</a>
             <a href="#conexoes" onClick={() => setMenuOpen(false)}>Conexões</a>
           </nav>
           <a className="header-contact" href="mailto:josieljuniorfoco@gmail.com">Vamos conversar <ArrowUpRight size={15} /></a>
@@ -207,7 +209,7 @@ export default function Home() {
             </div>
             <aside className="hero-profile" aria-label="Perfil profissional">
               <div className="profile-photo-wrap">
-                <img src="/profile.webp" alt="Retrato profissional de Josiel Barros" className="profile-photo" />
+                <img src="/josiel-profile-2026.webp" alt="Foto profissional de Josiel Barros com blazer azul-marinho" className="profile-photo" width={760} height={760} fetchPriority="high" />
               </div>
               <div className="profile-caption">
                 <span className="profile-heading">TECNOLOGIA + VISÃO DE NEGÓCIO</span>
@@ -240,10 +242,13 @@ export default function Home() {
           </div>
         </section>
 
+        <AreasSection />
+        <TechSection />
+
         <section id="projetos" className="section projects-section">
           <div className="site-container">
             <div className="section-heading-row">
-              <div><p className="section-kicker">02 / PORTFÓLIO</p><h2 className="section-title">Projetos com <span>endereços reais.</span></h2><p className="section-lead">Produtos, sites e experimentos publicados. Cada cartão leva ao projeto correspondente; quando não há demonstração pública, isso fica indicado.</p></div>
+              <div><p className="section-kicker">04 / PORTFÓLIO</p><h2 className="section-title">Projetos com <span>endereços reais.</span></h2><p className="section-lead">Produtos, sites e experimentos publicados. Cada cartão leva ao projeto correspondente; quando não há demonstração pública, isso fica indicado.</p></div>
               <a className="subtle-link" href="https://github.com/JosielBarrosfoco" target="_blank" rel="noopener noreferrer">Ver todos os repositórios <ArrowUpRight size={16}/></a>
             </div>
             <div className="project-toolbar" role="group" aria-label="Filtrar projetos">
@@ -265,7 +270,7 @@ export default function Home() {
 
         <section className="section path-section" id="trajetoria">
           <div className="site-container">
-            <p className="section-kicker">03 / EXPERIÊNCIA & FORMAÇÃO</p>
+            <p className="section-kicker">05 / EXPERIÊNCIA & FORMAÇÃO</p>
             <h2 className="section-title">Uma trajetória entre <span>operações e tecnologia.</span></h2>
             <div className="path-grid">
               <article className="path-card"><span className="path-icon"><BriefcaseBusiness size={23}/></span><span className="path-number">01</span><h3>PLAGE SYSTEM</h3><p className="path-label">Empreendedorismo & tecnologia</p><p>Desenvolvimento de produtos digitais, sistemas empresariais, ERP, automações e projetos web. Visão de produto e implementação técnica.</p></article>
@@ -282,7 +287,7 @@ export default function Home() {
         <section id="conexoes" className="section connections-section">
           <div className="site-container connections-grid">
             <div>
-              <p className="section-kicker">04 / CONEXÕES</p>
+              <p className="section-kicker">06 / CONEXÕES</p>
               <h2 className="section-title">Tudo em <span>um só lugar.</span></h2>
               <p className="section-lead">Projetos, histórico profissional, presença digital e contato. Para conhecer meu trabalho ou discutir uma oportunidade, comece por aqui.</p>
               <a href="mailto:josieljuniorfoco@gmail.com" className="btn btn-primary">Entrar em contato <Mail size={18}/></a>
