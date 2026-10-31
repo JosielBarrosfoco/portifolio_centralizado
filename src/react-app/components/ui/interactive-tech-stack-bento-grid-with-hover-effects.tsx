@@ -618,7 +618,7 @@ function TerminalCard() {
    Card 3: Indicadores demonstrativos scores (small)
    ========================================================================== */
 
-function Indicadores demonstrativosCard() {
+function LighthouseCard() {
   const radius = 20;
   const circumference = 2 * Math.PI * radius;
 
@@ -662,7 +662,7 @@ function Indicadores demonstrativosCard() {
   );
 }
 
-// end of Indicadores demonstrativosCard
+// end of LighthouseCard
 
 
 /* ==========================================================================
@@ -831,7 +831,7 @@ export default function TechStackBento() {
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:auto-rows-[210px] lg:grid-cols-4">
             <LatencyCard />
             <TerminalCard />
-            <Indicadores demonstrativosCard />
+            <LighthouseCard />
             <ThroughputCard />
             <StackCard />
           </div>
