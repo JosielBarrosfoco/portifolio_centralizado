@@ -71,9 +71,6 @@ export function AreasSection() {
                   width={245}
                   appearDelay={index * 85}
                   files={area.files}
-                  onFileSelect={(file) => {
-                    if (file.href) window.open(file.href, '_blank', 'noopener,noreferrer');
-                  }}
                 />
               </div>
               <p className="area-description">{area.description}</p>
