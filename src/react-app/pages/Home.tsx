@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import {
-  ArrowDown, ArrowRight, ArrowUpRight, BriefcaseBusiness, CheckCircle2,
+  ArrowDown, ArrowRight, ArrowUpRight, BriefcaseBusiness,
   Code2, Database, ExternalLink, Github, Globe2, Instagram, Layers3,
   Linkedin, Mail, Menu, Sparkles, Workflow, X
 } from 'lucide-react';
